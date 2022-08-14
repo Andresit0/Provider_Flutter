@@ -37,15 +37,15 @@
 
 ## Widget That Creates Its Own Context
 
-  Widget counterWidget() {
-    return Consumer<Counter>(
-      builder: (context, counter, _) => Text(
-        counter.currentCounter.toString(),
-      ),
-    );
-  }
+    Widget counterWidget() {
+        return Consumer<Counter>(
+        builder: (context, counter, _) => Text(
+            counter.currentCounter.toString(),
+        ),
+        );
+    }
 
-  counterWidget(),
+    counterWidget(),
 
 ## Information Inside A Provider
     final counter = Provider.of<Counter>(context);
